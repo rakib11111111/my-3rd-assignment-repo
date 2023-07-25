@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lato m-0 p-0">
+    <header>
+        <nav>
+            <div class="navbar bg-red-500 rounded-full text-white">
+                <div class="">
+                    <ul class="flex pl-8 gap-2 text-base">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                <div class="flex-1 justify-center gap-2">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="text-4xl">Fruit Burst</h1>
+                </div>
+                <div class="">
+                    <div class="pr-4">
+                        <input type="text" placeholder="Search here"
+                            class="rounded-full input input-bordered relative w-30 md:w-auto" />
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="carousel w-full pt-4">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./images/banner1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="text-white text-center">
+                        <h1 class="text-7xl mb-8">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="text-white mt-8 btn btn-error">Shop Now</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/banner2.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <div class="text-white text-center">
+                        <h1 class="text-7xl mb-8">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="text-white mt-8 btn btn-error">Shop Now</button>
+                    </div>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/banner3.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <div class="text-white text-center">
+                        <h1 class="text-7xl mb-8">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="text-white mt-8 btn btn-error">Shop Now</button>
+                    </div>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="/images/banner4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <div class="text-white text-center">
+                        <h1 class="text-7xl mb-8">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="text-white mt-8 btn btn-error">Shop Now</button>
+                    </div>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main> 
+    <footer>
+
+    </footer>
+</body>
+
+</html>
